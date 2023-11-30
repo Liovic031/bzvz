@@ -241,64 +241,68 @@ header .search-bar-container label:hover{
     display:none;
 }
 
-.home{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+.home {
     position: relative;
-    z-index: 0;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: -2rem; /* Smanjuje bijeli prostor između slike i sljedećeg sectiona */
 }
 
-.home .content{
+.content {
+    position: relative;
     text-align: center;
-}
-
-.home .content h3{
-    font-size: 4.5rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 0 .3rem .5rem rgba(0, 0,0,.1);
-}
-
-.home .content p{
-    font-size: 2.5rem;
-    color: #fff;
-   padding:.5rem 0;
-}
-
-.home .video-container video{
-    position:absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-.home .controls{
-    padding:1rem;
-    border-radius: 5rem;
-    background:rgba(0, 0,0,.7);
-    position:relative;
-    top:10rem;
-}
-
-.home .controls .vid-btn{
-    height:2rem;
-    width: 2rem;
-    display:inline-block;
-    border-radius: 50%;
-    background:#fff;
-    cursor:pointer;
-    margin: 0 .5rem;
-}
-
-.home .controls .vid-btn.active{
-    background:var(--orange);
-}
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    display: flex; /* Dodano kako bi elementi bili u istom redu */
+    flex-direction: column; /* Dodano kako bi elementi bili postavljeni vertikalno */
+  }
+  
+  .text-container h3 {
+    max-width: 1500px;
+    padding: 5rem 3rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    line-height: 3rem;
+    font-weight: 650;
+    color: var(--white);
+    white-space: nowrap;
+  }
+  
+  .text-container p {
+    max-width: 2000px;
+    padding: 2rem 2rem;
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--extra-light);
+    text-align: left; /* Dodano kako bi tekst bio poravnat lijevo */
+  }
+  
+  
+  
+  .image-container {
+    margin-top: 1rem; /* Povećajte ili smanjite prema potrebi */
+    position: relative; /* Dodano kako bi se mogla koristiti z-index */
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-height: 600px; /* Prilagodite visinu prema potrebi */
+    border-radius: 2rem;
+    opacity: 0.8; /* Dodajte ovu liniju kako biste postavili stupanj izblijedjivanja (vrijednost od 0 do 1) */
+    position: relative; /* Dodano kako bi se mogla koristiti z-index */
+    z-index: 0; /* Dodano kako bi slika bila iza teksta */
+  }
+  
 
 
 .book .row{

@@ -66,26 +66,20 @@
 
 
 
+
 <section class="home" id="home">
     <div class="content">
-        <h3>welcome to A global icon of luxury</h3>
-        <p>dicover new places with us, luxury awaits</p>
-        <a href="#" class="btn">discover more</a>
+        <div class="text-container">
+            <h3>Pronađite svoj sljedeći smještaj</h3>
+            <p>Rezervirajte hotelske sobe prema vašim mogućnostima.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/header.jpg" alt="Opis slike">
+        </div>
     </div>
-
-    <div class="controls">
-        <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
-        <span class="vid-btn" data-src="img/vid-2.mp4"></span>
-        <span class="vid-btn" data-src="img/vid-3.mp4"></span>
-        <span class="vid-btn" data-src="img/vid-4.mp4"></span>
-        <span class="vid-btn" data-src="img/vid-5.mp4"></span>
-    </div>
-
-    <div class="video-container">
-        <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-    </div>
-
 </section>
+
+
 
 
 <section class="gallery" id="gallery">
@@ -106,7 +100,7 @@
         <div class="content">
             <h3>osijek</h3>
             <p>Provjerite dostupne hotele</p>
-            <a href="#" class="btn">ovdje</a>
+            <a href="#packages" class="btn">ovdje</a>
         </div>
     </div>
     <div class="box">
@@ -114,7 +108,7 @@
         <div class="content">
             <h3>zagreb</h3>
             <p>Provjerite dostupne hotele</p>
-            <a href="#" class="btn">ovdje</a>
+            <a href="#packages" class="btn">ovdje</a>
         </div>
     </div>
     <div class="box">
@@ -122,7 +116,7 @@
         <div class="content">
             <h3>split</h3>
             <p>Provjerite dostupne hotele</p>
-            <a href="#" class="btn">ovdje</a>
+            <a href="#packages" class="btn">ovdje</a>
         </div>
     </div>
     <div class="box">
@@ -130,7 +124,7 @@
         <div class="content">
             <h3>rijeka</h3>
             <p>Provjerite dostupne hotele</p>
-            <a href="#" class="btn">ovdje</a>
+            <a href="#packages" class="btn">ovdje</a>
         </div>
     </div>
 </div>
@@ -155,7 +149,7 @@
                 <p>Hotel Osijek</p>
                 
                 <div class="price"> 151 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
 
@@ -166,7 +160,7 @@
                 <p>Hotel Waldinger</p>
                 
                 <div class="price"> 143 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
 
@@ -177,7 +171,7 @@
                 <p>Sheraton Zagreb Hotel</p>
                 
                 <div class="price"> 115 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
 
@@ -188,7 +182,7 @@
                 <p>Esplanade Hotel</p>
                 
                 <div class="price"> 137 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
 
@@ -199,7 +193,7 @@
                 <p>Hotel Ambasador</p>
                 
                 <div class="price"> 126 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
 
@@ -210,7 +204,7 @@
                 <p>Hilton Rijeka Costabella Beach Resort And Spa</p>
                 
                 <div class="price"> 144 € </div>
-                <a href="#" class="btn">bookiraj</a>
+                <a href="#book" class="btn">bookiraj</a>
             </div>
         </div>
     </div>
@@ -224,6 +218,7 @@
         <span>o</span>
         <span>o</span>
         <span>k</span>
+        <span>i</span>
         <span>r</span>
         <span>a</span>
         <span>j</span>
@@ -238,19 +233,19 @@
         
         <form action="">
               <div class="inputBox">
-                  <h3>where to</h3>
-                  <input type="text" placeholder="place name">
+                  <h3>grad</h3>
+                  <input type="text" placeholder="ime grada">
               </div>
               <div class="inputBox">
-                <h3>how many</h3>
-                <input type="number" placeholder="number of guests">
+                <h3>Koliko gostiju?</h3>
+                <input type="number" placeholder="broj gostiju">
             </div>
             <div class="inputBox">
-                <h3>arrivals</h3>
+                <h3>dolazak</h3>
                 <input type="date">
             </div>
             <div class="inputBox">
-                <h3>leaving</h3>
+                <h3>odlazak</h3>
                 <input type="date">
             </div>
             <input type="submit" class="btn" value="bookiraj">
@@ -262,12 +257,15 @@
 
 <section class="review" id="review">
     <h1 class="heading">
-        <span>o</span>
+        <span>r</span>
+        <span>e</span>
         <span>c</span>
-        <span>j</span>
         <span>e</span>
         <span>n</span>
-        <span>a</span>
+        <span>z</span>
+        <span>i</span>
+        <span>j</span>
+        <span>e</span>
     </h1>
     <div class="swiper mySwiper review-slider">
         <div class="swiper-wrapper wrapper">
@@ -319,16 +317,21 @@
 <section class="contact" id="contact">
     <h1 class="heading">
         <span>o</span>
-        <span>c</span>
-        <span>i</span>
-        <span>j</span>
-        <span>e</span>
-        <span>n</span>
+        <span>s</span>
+        <span>t</span>
+        <span>a</span>
+        <span>v</span>
         <span>i</span>
         <span class="space"></span>
+        <span>r</span>
+        <span>e</span>
+        <span>c</span>
+        <span>e</span>
         <span>n</span>
-        <span>a</span>
-        <span>s</span>
+        <span>z</span>
+        <span>i</span>
+        <span>j</span>
+        <span>u</span>
     </h1>
     <div class="row">
         <form action="">
@@ -363,13 +366,12 @@
         </div>
         <div class="box">
             <h3>poveznice</h3>
-            <a href="#">home</a>
-            <a href="#">package</a>
-            <a href="#">service</a>
-            <a href="#">gallery</a>
-            <a href="#">review</a>
-            <a href="#">contact</a>
-            <a href="#">book</a>
+            <a href="#home">home</a>
+            <a href="#gallery">gradovi</a>
+            <a href="#packages">hoteli</a>
+            <a href="#book">bookiraj</a>
+            <a href="#review">ocjena</a>
+            <a href="#contact">ocijeni</a>
         </div>
         <div class="box">
             <h3>zaprati nas</h3>
