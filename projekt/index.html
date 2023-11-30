@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Hotel</span> booking</a>
+        <nav class="navbar">
+             <a href="#home">home</a>
+             <a href="#gallery">gradovi</a>
+             <a href="#packages">hoteli</a>
+             <a href="#book">bookiraj</a>
+             <a href="#review">ocjena</a>
+             <a href="#contact">ocijeni</a>
+             
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+
+
+
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+         <h3>prijava</h3>
+         <input type="email" class="box" placeholder="unesite email">
+         <input type="password" class="box" placeholder="unesite lozinku">
+         <input type="submit" value="prijavite se" class="btn">
+         <input type="checkbox" id="remember">
+         <label for="remember">Zapamti me</label>
+         <p>Zaboravili ste lozinku? <a href="#">Pritisnite ovdje</a></p>
+         <p>Nemate korisnički račun? <a href="#">Registrirajte se ovdje</a></p>
+    </form>
+</div>
+
+
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>welcome to A global icon of luxury</h3>
+        <p>dicover new places with us, luxury awaits</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>r</span>
+        <span>a</span>
+        <span>d</span>
+        <span>o</span>
+        <span>v</span>
+        <span>i</span>
+    </h1>
+
+
+<div class="box-container">
+    <div class="box">
+        <img decoding="async" src="img/osijek1.jpg" alt="">
+        <div class="content">
+            <h3>osijek</h3>
+            <p>Provjerite dostupne hotele</p>
+            <a href="#" class="btn">ovdje</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="img/zagreb1.jpg" alt="">
+        <div class="content">
+            <h3>zagreb</h3>
+            <p>Provjerite dostupne hotele</p>
+            <a href="#" class="btn">ovdje</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="img/split1.jpeg" alt="">
+        <div class="content">
+            <h3>split</h3>
+            <p>Provjerite dostupne hotele</p>
+            <a href="#" class="btn">ovdje</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="img/rijeka1.jpg" alt="">
+        <div class="content">
+            <h3>rijeka</h3>
+            <p>Provjerite dostupne hotele</p>
+            <a href="#" class="btn">ovdje</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>t</span>
+        <span>e</span>
+        <span>l</span>
+        <span>i</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="img/hotel-1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Osijek, Hrvatska </h3>
+                <p>Hotel Osijek</p>
+                
+                <div class="price"> 151 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="img/hotel-2.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Osijek, Hrvatska </h3>
+                <p>Hotel Waldinger</p>
+                
+                <div class="price"> 143 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="img/hotel-3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Zagreb, Hrvatska </h3>
+                <p>Sheraton Zagreb Hotel</p>
+                
+                <div class="price"> 115 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="img/hotel-4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Zagreb, Hrvatska </h3>
+                <p>Esplanade Hotel</p>
+                
+                <div class="price"> 137 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="img/hotel-5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Split, Hrvatska </h3>
+                <p>Hotel Ambasador</p>
+                
+                <div class="price"> 126 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="img/hotel-6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Rijeka, Hrvatska </h3>
+                <p>Hilton Rijeka Costabella Beach Resort And Spa</p>
+                
+                <div class="price"> 144 € </div>
+                <a href="#" class="btn">bookiraj</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span>r</span>
+        <span>a</span>
+        <span>j</span>
+        <span class="space"></span>
+        <span>s</span>
+        <span>a</span>
+        <span>d</span>
+        <span>a</span>
+    </h1>
+
+    <div class="row">
+        
+        <form action="">
+              <div class="inputBox">
+                  <h3>where to</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="bookiraj">
+        </form>
+    </div>
+</section>
+
+
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>o</span>
+        <span>c</span>
+        <span>j</span>
+        <span>e</span>
+        <span>n</span>
+        <span>a</span>
+    </h1>
+    <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="img/noimage.gif" alt="">
+                    <h3>?</h3>
+                    <p>?</p>
+                    <p>ocjena: ?</p>
+                        
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="img/noimage.gif" alt="">
+                    <h3>?</h3>
+                    <p>?</p>
+                    <p>ocjena: ?</p>   
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="img/noimage.gif" alt="">
+                    <h3>?</h3>
+                    <p>?</p>
+                    <p>ocjena: ?</p>    
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="img/noimage.gif" alt="">
+                    <h3>?</h3>
+                    <p>?</p>
+                    <p>ocjena: ?</p>    
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>o</span>
+        <span>c</span>
+        <span>i</span>
+        <span>j</span>
+        <span>e</span>
+        <span>n</span>
+        <span>i</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>a</span>
+        <span>s</span>
+    </h1>
+    <div class="row">
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="ime">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="ocjena(1-5)">
+                <input type="text" placeholder="hotel">
+            </div>
+            <textarea placeholder="komentar" name="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="pošalji">
+        </form>
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>o nama</h3>
+            <p>Hotel booking je web stranica za 
+            rezervaciju soba u najluksuznijim hotelima u Hrvatskoj</p>
+        </div>
+        <div class="box">
+            <h3>lokacije hotela</h3>
+            <a href="#">Osijek</a>
+            <a href="#">Zagreb</a>
+            <a href="#">Split</a>
+            <a href="#">Rijeka</a>
+        </div>
+        <div class="box">
+            <h3>poveznice</h3>
+            <a href="#">home</a>
+            <a href="#">package</a>
+            <a href="#">service</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            <a href="#">book</a>
+        </div>
+        <div class="box">
+            <h3>zaprati nas</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+    </div>
+</section> <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>  <script src="main.js" defer data-deferred="1"></script> </body>
+</html>
