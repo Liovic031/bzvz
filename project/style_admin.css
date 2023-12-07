@@ -1,0 +1,35 @@
+/* Dodajte ove stilove u vaš stilski CSS file (npr. style_admin.css) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+ }
+ 
+ .reservations {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+ }
+ 
+ .reservation-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+ }
+ 
+ .reservation-item p {
+    margin: 5px 0;
+ }
+ 
+ /* Dodajte više stilova prema potrebi */
+ 
